@@ -53,3 +53,4 @@ cd dotfiles # Go to the cloned directory
 ./setup.sh # Run the installation script; You might need to give the script X permissions ( run chmod +x setup.sh )
 ```
 
+###### Credits to people who posted their sketchybar configs, I used them for my themes.
