@@ -1,0 +1,60 @@
+#!/usr/bin/env sh
+
+source "$HOME/.config/sketchybar/colors.sh" # Loads all defined colors
+
+ITEM_DIR="$HOME/.config/sketchybar/items" # Directory where the items are configured
+PLUGIN_DIR="$HOME/.config/sketchybar/plugins" # Directory where all the plugin scripts are stored
+BAR_DIR="$HOME/.config/sketchybar/bars" # Directory where the bars are
+
+FONT="SFMono Nerd Font" # Needs to have Regular, Bold, Semibold, Heavy and Black variants
+
+# Setting up the general bar appearance and default values
+sketchybar --bar     height=40                                         \
+					 y_offset=-50									   \
+                     color=$BAR_COLOR                                  \
+                     shadow=on                                         \
+                     position=top                                      \
+                     sticky=off                                        \
+                     padding_right=7                                   \
+                     padding_left=7                                    \
+                     corner_radius=9                                   \
+                     margin=10                                         \
+                     blur_radius=20                                    \
+                     notch_width=100                                   \
+                                                                       \
+           --default updates=when_shown                                \
+                     icon.font="$FONT:Bold:17.0"                       \
+                     icon.color=$ICON_COLOR                            \
+                     icon.padding_left=19		                       \
+                     icon.padding_right=4		                       \
+                     label.font="$FONT:Semibold:12.5"                  \
+                     label.color=$LABEL_COLOR                          \
+                     label.padding_left=5		                       \
+                     label.padding_right=5		                       \
+                     background.padding_right=-8                       \
+                     background.padding_left=-8                        \
+                     background.height=28                              \
+                     background.corner_radius=15                       \
+                     popup.background.border_width=3                   \
+                     popup.background.corner_radius=11                 \
+                     popup.background.border_color=$GREY			   \
+                     popup.background.color=$WHITE
+
+# Left
+source "$BAR_DIR/left_bar.sh"
+
+# Center
+source "$ITEM_DIR/spaces.sh"
+
+# Right
+source "$BAR_DIR/right_bar.sh"
+
+# Forcing all item scripts to run (never do this outside of sketchybarrc)
+sketchybar --update
+sketchybar --trigger windows_on_spaces
+sketchybar --trigger window_focus
+sketchybar --trigger volume_change
+
+echo "sketchybar configuation loaded.."
+
+sketchybar --animate sin 30 --bar y_offset=0

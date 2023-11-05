@@ -1,0 +1,30 @@
+#!/usr/bin/env sh
+
+CBACK=0xff24283b
+CFORE=0xffa9b1d6
+CINSE=0xff565f89
+CCUR=0xffa9b1d6
+RED=0xfff7768e
+GREEN=0xff9ece6a
+YELLOW=0xffe0af68
+BLUE=0xff7aa2f7
+PURPLE=0xffbb9af7
+CYAN=0xff7dcfff
+GREY=0xffc0caf5
+DGRAY=0xffa9b1d6
+BLACK=0xff414868
+
+# All the colors
+
+BAR_COLOR=$CBACK
+ICON_COLOR=0xffffffff
+LABEL_COLOR=0xffffffff
+BG_COLOR=0xff1d344f
+GREY=0xff9699a3
+WHITE=0xffcfc9c2
+PINK=0xffc08093
+GREEN=0xff7ca198
+YELLOW=0xffe4b371
+DBLUE=0xff6080b0
+PURPLE=0xff8e6f98
+LBLUE=0xff6ca8cf
