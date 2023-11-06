@@ -4,6 +4,9 @@ These are my dotfiles for Mac! <br>
 I spent a ***very* long** time on those, so please give credit if your using it :) <br>
 Tested on MacOS Ventura 13.0 on a M1 2020 Macbook Pro. This might not work on other hardware/software.<br>
 
+![](images/preview.jpeg)
+<p align=center>Current Setup</p>
+
 This dotfile includes:
 | Dmenu Scripts | Skhd Config    | Sketchybar    | Yabai WM      | 
 |    :---:      |     :---:      |     :---:     |     :---:     |
