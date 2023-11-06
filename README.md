@@ -5,7 +5,13 @@ I spent a ***very* long** time on those, so please give credit if your using it 
 Tested on MacOS Ventura 13.0 on a M1 2020 Macbook Pro. This might not work on other hardware/software.<br>
 
 ![](images/preview.jpeg)
-<p align=center>Current Setup</p>
+<p align=center>Tokyo Night</p>
+
+![](images/light.png)
+<p align=center>Rose Pine Dawn</p>
+
+![](images/pywal.jpeg)
+<p align=center>Pywal</p>
 
 This dotfile includes:
 | Dmenu Scripts | Skhd Config    | Sketchybar    | Yabai WM      | 
